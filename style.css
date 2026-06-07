@@ -1,0 +1,309 @@
+/* =====================
+   RESET & GLOBAL
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body > p:last-child {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-size: 14px;
+}
+
+h1 {
+    color: #f97316;
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #f97316;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    color: #f0f0f0;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #aaaaaa;
+    margin-bottom: 6px;
+}
+
+strong {
+    color: #f0f0f0;
+}
+
+a {
+    color: #f97316;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2a2a2a;
+    margin: 15px 30px;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background-color: #141414;
+    border-bottom: 2px solid #f97316;
+    padding: 0 30px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 55px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header nav a {
+    color: #aaaaaa;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #f97316;
+    text-decoration: none;
+}
+
+/* =====================
+   COMPETITIONS
+===================== */
+.competitions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.competition {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 320px;
+    transition: border-color 0.2s;
+}
+
+.competition:hover {
+    border-color: #f97316;
+}
+
+.competition img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.competition a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f97316;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.competition a:hover {
+    background-color: #ea6c0a;
+    text-decoration: none;
+}
+
+.competition table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =====================
+   FORMULAIRES
+===================== */
+form:not(.form-tableau) {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 460px;
+    margin: 40px auto;
+}
+
+.form-tableau {
+    max-width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #f0f0f0;
+    font-size: 14px;
+    margin-bottom: 4px;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #f97316;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    background-color: #f97316;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ea6c0a;
+}
+
+/* =====================
+   MESSAGES
+===================== */
+.msg-erreur {
+    background-color: #2a1010;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b44;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 10px 30px;
+    font-size: 14px;
+}
+
+.msg-succes {
+    background-color: #0f2a10;
+    color: #22c55e;
+    border: 1px solid #22c55e44;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 10px 30px;
+    font-size: 14px;
+}
+
+/* =====================
+   TABLEAUX
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table th {
+    background-color: #f97316;
+    color: #000;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid #2a2a2a;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+table tr:hover td {
+    background-color: #1a1a1a;
+}
+
+.mon-resultat td {
+    color: #f97316;
+    font-weight: 600;
+}
+
+table input[type="text"],
+table input[type="number"] {
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    color: #f0f0f0;
+    padding: 6px 10px;
+    font-size: 13px;
+    width: 130px;
+    margin-bottom: 0;
+}
+
+/* =====================
+   PROFIL
+===================== */
+.profil-infos {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 25px 30px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.resultat-bloc {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 15px 30px;
+    width: auto;
+}
